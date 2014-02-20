@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script data-main="example5" src="require.js"></script>
+    <link rel="stylesheet" type="text/css" href="examples.css">
+</head>
+
+<body>
+
+<span class="title">Autocompletion.</span>
+
+<ul>
+    <li>
+        <a href="index.html">DSL examples</a>
+    </li>
+    <li>
+        <a href="example5.js">Source</a>
+    </li>
+</ul>
+    <div id="autocompletion">
+
+        <div>
+            Country
+        </div>
+        <div class="widget">
+            <input type='text' id = 'search' data-bind='value: searchValue, valueUpdate: "afterkeydown"' autocomplete="off"/>
+            <select size='20' multiple='multiple'  data-bind="options: items, visible: display"> </select>
+        </div>
+    </div>
+
+</body>
+</html>
