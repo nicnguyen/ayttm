@@ -167,7 +167,6 @@ var ayttm;
                 p.applyTrigger(event);
             });
 
-            //    Logger.debug(state.name + " accepted " + (event.css ? event.css +":" : '') + event.name);
             return true;
         };
 
@@ -211,7 +210,6 @@ var ayttm;
         return new ExpressionBuilder()._(p);
     };
 
-    // triggers
     ayttm._.mousemoveTracker = function (targetSelector, containerSelector) {
         return new ayttm.TrackMouseMovement(targetSelector, containerSelector);
     };
@@ -228,7 +226,6 @@ var ayttm;
         return new ayttm.RemoveClass(target, cssClass);
     };
 
-    // propositions
     ayttm._.timout = function () {
         return { name: 'timeout' };
     };
@@ -847,7 +844,6 @@ var ayttm;
     })();
     ayttm.Set = Set;
 })(ayttm || (ayttm = {}));
-/// <reference path="set.ts"/>
 var ayttm;
 (function (ayttm) {
     var GraphNode = (function () {
@@ -1020,10 +1016,6 @@ var ayttm;
     })(Expression);
     ayttm.Proposition = Proposition;
 
-    /**
-    *  this.trigger depends on UIDocumentService.
-    *  i.e. this.trigger = this.symbolicTrigger.callback(someDocumentService);
-    */
     var PropositionWithSymbolicTrigger = (function (_super) {
         __extends(PropositionWithSymbolicTrigger, _super);
         function PropositionWithSymbolicTrigger(event, symbolicTrigger) {
@@ -1392,3 +1384,4 @@ var ayttm;
     })();
     ayttm.BasicUIDocumentService = BasicUIDocumentService;
 })(ayttm || (ayttm = {}));
+//# sourceMappingURL=ayttm.js.map
